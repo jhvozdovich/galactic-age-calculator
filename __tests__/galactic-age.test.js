@@ -33,6 +33,6 @@ describe ("User", () => {
   });
 
   test("should estimate a user's life expectancy", () => {
-    expect(emma.lifeExpectancy()).toEqual(80);
+    expect(emma.lifeExpectancy()).toEqual(71);
   });
 });

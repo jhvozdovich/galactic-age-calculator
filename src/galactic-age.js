@@ -4,6 +4,10 @@ export class User {
     this.year = year;
     this.month = month;
     this.day = day;
+    this.gender
+    this.activity
+    this.environment
+    this.stress
   }
 
   findAge() {
@@ -38,6 +42,32 @@ export class User {
   }
 
   lifeExpectancy() {
-    
+    let lifeExpectancy = 71;
+    if (this.gender === "male") {
+      lifeExpectancy -= 1;
+    } else if (this.gender === "female") {
+      lifeExpectancy += 1;
+    }
+
+    if (this.activity === "sedentary") {
+      lifeExpectancy -= 5;
+    } else if (this.activity === "active") {
+      lifeExpectancy += 5;
+    }
+
+    if (this.environment === "city") {
+      lifeExpectancy -= 2;
+    } else if (this.environment === "rural") {
+      lifeExpectancy += 1;
+    }
+
+    if (this.stress === "low") {
+      lifeExpectancy += 5;
+    } else if (this.stress === "high") {
+      lifeExpectancy -= 6;
+    }
+
+    return lifeExpectancy;
   }
 }
+
