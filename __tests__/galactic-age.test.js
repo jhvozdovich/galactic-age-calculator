@@ -32,7 +32,15 @@ describe ("User", () => {
     expect(emma.findJupiter()).toEqual(2);
   });
 
-  test("should estimate a user's life expectancy", () => {
+  test("should estimate a user's life expectancy-neutral", () => {
     expect(emma.lifeExpectancy()).toEqual(71);
+  });
+
+  test("should estimate a user's life expectancy-highest possible", () => {
+    emma.gender = "female";
+    emma.activity = "active";
+    emma.environment = "rural";
+    emma.stress = "low";
+    expect(emma.lifeExpectancy()).toEqual(83);
   });
 });
