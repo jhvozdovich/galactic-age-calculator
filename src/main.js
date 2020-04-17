@@ -14,8 +14,13 @@ $(document).ready(function() {
     let day = parseInt(birthday.slice(8));
     
     let user = new User(name, year, month, day);
-
-    console.log(user);
-  
+    let earthAge = user.findAge();
+    $("#user-name").text(name);
+    $("#earth-years").text(earthAge);
+    $("#mercury-years").text(user.findMercury(earthAge));
+    $("#venus-years").text(user.findVenus(earthAge));
+    $("#mars-years").text(user.findMars(earthAge));
+    $("#jupiter-years").text(user.findJupiter(earthAge));
+    $(".age-results").show();
   });
 });
