@@ -73,7 +73,10 @@ export class User {
 
   lifeExpectancyMessage() {
     if (this.findAge() < this.lifeExpectancy()) {
-      let message = `Your estimated life expectancy is ${this.lifeExpectancy()} Earth years. Live long and prosper!`
+      let message = `Your estimated life expectancy is ${this.lifeExpectancy()} Earth years. Live long and prosper!`;
+      return message;
+    } else {
+      let message = `Your estimated life expectancy is ${this.lifeExpectancy()} Earth years. Way to beat the odds! Live long and prosper!`;
       return message;
     }
   }
