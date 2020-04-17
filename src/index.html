@@ -7,61 +7,73 @@
   <body>
     <div class="container">
       <div class="row age-questions">
-        <div class="col-md-6">
+        <div class="jumbotron">
           <h1>Super Galactic Age Claculator</h1>
           <h3>Enter your information below to find out how old you are on different planets!</h3>
-          <hr>
+        </div>
+        <div class="panel panel-body">
           <form id="birthday-form">
             <label for="name-input">Your Name</label>
-            <input class="form-control" type="text" id="name-input" required>
+            <input class="form-control reduce-width" type="text" id="name-input" required>
+            <br>
             <label for="birthday-input">Your Birthday</label>
-            <input class="form-control" type="date" id="birthday-input" required>
+            <input class="form-control reduce-width" type="date" id="birthday-input" required>
             <br>
             <button type="submit" class="btn btn-outline-success btn-lg">Galactify!</button>
           </form>
-        </div>
-        <div class="col-md-6 age-results">
+        </div>  
+      </div>  
+      <div class="age-results">
+        <div class="jumbotron">
           <h3>Time is relative and age is just a number!</h3>
           <h5>Here are your results <span id="user-name"></span>:</h5>
-          <p>Your age in Earth years: <span id="earth-years"></span></p>
-          <p>Your age in Mercury years: <span id="mercury-years"></span></p>
-          <p>Your age in Venus years: <span id="venus-years"></span></p>
-          <p>Your age in Mars years: <span id="mars-years"></span></p>
-          <p>Your age in Jupiter years: <span id="jupiter-years"></span></p>
         </div>
+        <p>Your age in Earth years: <span id="earth-years"></span></p>
+        <p>Your age in Mercury years: <span id="mercury-years"></span></p>
+        <p>Your age in Venus years: <span id="venus-years"></span></p>
+        <p>Your age in Mars years: <span id="mars-years"></span></p>
+        <p>Your age in Jupiter years: <span id="jupiter-years"></span></p>
       </div>
-      <hr>
       <div class="row big-question">
-        <button type="button" class="btn btn-outline-danger btn-lg">
+        <button type="button" class="big-question btn btn-outline-danger btn-lg">
           Wanna know when you might die? (ʘ‿ʘ✿)
         </button>
+        <br>
+        <br>
+        <button type="button" class="phone-home btn btn-outline-success btn-lg">
+          Nah I'm good.
+        </button>
       </div>
-      <div class="row life-questions">
-        <h1>Super Galactic Death Claculator</h1>
-        <h3>This is a story about...YOU!</h3>
-        <hr>
+      <div class="row life-form">
+        <div class="jumbotron">
+          <h1>Super Galactic Death Claculator</h1>
+          <h3>This is a story about...YOU!</h3>
+        </div>  
         <form id="life-expectancy-form">
           <label for="gender-input">Gender</label>
-          <select class="form-control" id="gender-input">
+          <select class="form-control reduce-width" id="gender-input">
             <option value="male">Male</option>
             <option value="female">Female</option>
             <option value="nonbinary">Nonbinary</option>
             <option value="other">Other/Prefer Not to Answer</option>
           </select>
+          <br>
           <label for="activity-input">Activity Level</label>
-          <select class="form-control" id="activity-input">
+          <select class="form-control reduce-width" id="activity-input">
             <option value="active">Active</option>
             <option value="moderate">Moderate</option>
             <option value="sedentary">Sedentary</option>
           </select>
+          <br>
           <label for="environment-input">Environment</label>
-          <select class="form-control" id="environment-input">
+          <select class="form-control reduce-width" id="environment-input">
             <option value="city">City</option>
             <option value="suburb">Suburb</option>
             <option value="rural">Rural</option>
           </select>
+          <br>
           <label for="stress-input">Stress Level</label>
-          <select class="form-control" id="stress-input">
+          <select class="form-control reduce-width" id="stress-input">
             <option value="low">Low</option>
             <option value="moderate">Moderate</option>
             <option value="high">High</option>
@@ -70,9 +82,17 @@
           <button type="submit" class="btn btn-outline-success btn-lg">Let's find out!</button>
         </form>
         <br>
+      </div>
+      <div class="final-answer">
+        <div class="jumbotron">
+          <h1>Here is our best guess.</h1>
+          <h3>But who knows! See you space cowboy.</h3>
+        </div>  
         <div class="life-expectancy-results">
 
         </div>
+        <br>
+        <button class="btn btn-outline-success btn-lg phone-home">Phone home!</button>
       </div>
     </div>
   </body>

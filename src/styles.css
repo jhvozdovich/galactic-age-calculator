@@ -1,21 +1,33 @@
 body {
+  font-family: 'Courier New', Courier, monospace;
   text-align: center;
+  background-color: black;
+  margin-top: 5%;
 }
 
-button, .form-control {
+label, p, .life-expectancy-results {
+  color: white;
+}
+
+.row {
   display: block;
-  text-align: center;
   margin-left: auto;
   margin-right: auto;
-  width: 60%;
 }
 
-.age-results, .big-question, .life-questions {
+button, .reduce-width {
+  width: 40%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.age-results, .big-question, .life-form, .final-answer {
   display: none;
 }
 
 @media screen and (min-width: 800px) {
-  button {
+  button, .reduce-width {
     width: 25%;
   }
 }
