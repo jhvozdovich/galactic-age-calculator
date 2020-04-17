@@ -5,4 +5,8 @@ export class User {
     this.month = month;
     this.day = day;
   }
+
+  findAge() {
+    
+  }
 }
