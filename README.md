@@ -49,7 +49,6 @@ _Have a bug or an issue with this application? [Open a new issue](https://github
 | **If a user is over the calculated life expectancy, the output is how much they have exceeded it** | User Input:”Age: 80, Female-Active Lifestyle-City Residence” | Output: “This is how much longer you've lived than expected so far: Mercury: 21 years, Venus: 9 years, Earth: 5 years, Mars: 3 years, Jupiter: 1 years”  |
 | **Displays an error for invalid name** | User Input:”Name: 27” | Output: “Are you a robot?” |
 | **Displays an error for a future year** | User Input:”Birthday: February 25, 1995” | Output: “Are you from the future?” |
-| **In Progress-Calculates the date of the user's next birthday on each planet** | User Input:”Birthday: February 25, 1995” | Output: “Your next Mercury birthday is: May 25, 1995” |
 
 #### License
 
