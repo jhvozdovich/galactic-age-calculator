@@ -13,7 +13,8 @@ describe ("User", () => {
   });
 
   test("should correctly calculate a user's age in whole number years", () => {
-    let emmaAge = emma.findAge();
-    expect(emmaAge).toEqual(25);
+    expect(emma.findAge()).toEqual(25);
   });
+
+
 });
