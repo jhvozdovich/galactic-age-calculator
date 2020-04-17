@@ -31,4 +31,8 @@ describe ("User", () => {
   test("should correctly return a user's age in Jupiter years", () => {
     expect(emma.findJupiter()).toEqual(2);
   });
+
+  test("should estimate a user's life expectancy", () => {
+    expect(emma.lifeExpectancy()).toEqual(80);
+  });
 });

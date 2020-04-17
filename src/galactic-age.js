@@ -36,4 +36,8 @@ export class User {
     let jupiterAge = Math.floor(age / 11.86);
     return jupiterAge;
   }
+
+  lifeExpectancy() {
+    
+  }
 }
