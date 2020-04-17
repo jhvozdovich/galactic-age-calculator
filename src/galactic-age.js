@@ -4,10 +4,10 @@ export class User {
     this.year = year;
     this.month = month;
     this.day = day;
-    this.gender
-    this.activity
-    this.environment
-    this.stress
+    this.gender;
+    this.activity;
+    this.environment;
+    this.stress;
   }
 
   findAge() {

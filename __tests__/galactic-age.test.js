@@ -43,4 +43,12 @@ describe ("User", () => {
     emma.stress = "low";
     expect(emma.lifeExpectancy()).toEqual(83);
   });
+
+  test("should estimate a user's life expectancy-lowest possible", () => {
+    emma.gender = "male";
+    emma.activity = "sedentary";
+    emma.environment = "city";
+    emma.stress = "high";
+    expect(emma.lifeExpectancy()).toEqual(57);
+  });
 });
