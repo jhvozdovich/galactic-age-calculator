@@ -27,4 +27,8 @@ describe ("User", () => {
   test("should correctly return a user's age in Mars years", () => {
     expect(emma.findMars()).toEqual(13);
   });
+
+  test("should correctly return a user's age in Jupiter years", () => {
+    expect(emma.findJupiter()).toEqual(2);
+  });
 });

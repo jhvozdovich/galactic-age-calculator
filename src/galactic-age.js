@@ -30,4 +30,8 @@ export class User {
     let marsAge = Math.floor(age / 1.88);
     return marsAge;
   }
+
+  findJupiter() {
+  
+  }
 }
