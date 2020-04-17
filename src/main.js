@@ -22,5 +22,6 @@ $(document).ready(function() {
     $("#mars-years").text(user.findMars(earthAge));
     $("#jupiter-years").text(user.findJupiter(earthAge));
     $(".age-results").show();
+    $(".big-question").show();
   });
 });

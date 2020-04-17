@@ -10,24 +10,32 @@
         <div class="col-md-6">
           <h1>Super Galactic Age Claculator</h1>
           <h3>Enter your information below to find out how old you are on different planets!</h3>
+          <hr>
           <form id="birthday-form">
             <label for="name-input">Your Name</label>
-            <input class="form-control" type="text" id="name-input">
+            <input class="form-control" type="text" id="name-input" required>
             <label for="birthday-input">Your Birthday</label>
-            <input class="form-control" type="date" id="birthday-input">
-            <button type="submit">Galactify!</button>
+            <input class="form-control" type="date" id="birthday-input" required>
+            <br>
+            <button type="submit" class="btn btn-outline-success btn-lg">Galactify!</button>
           </form>
         </div>
         <div class="col-md-6 age-results">
           <h3>Time is relative and age is just a number!</h3>
-          <h5>Here are your results <span id="user-name"></span></h5>
+          <h5>Here are your results <span id="user-name"></span>:</h5>
           <p>Your age in Earth years: <span id="earth-years"></span></p>
           <p>Your age in Mercury years: <span id="mercury-years"></span></p>
           <p>Your age in Venus years: <span id="venus-years"></span></p>
           <p>Your age in Mars years: <span id="mars-years"></span></p>
           <p>Your age in Jupiter years: <span id="jupiter-years"></span></p>
         </div>
-      </div>  
+      </div>
+      <hr>
+      <div class="row big-question">
+        <button type="button" class="btn btn-outline-danger btn-lg">
+          Wanna know when you might die? (ʘ‿ʘ✿)
+        </button>
+      </div>
     </div>
   </body>
 </html>
