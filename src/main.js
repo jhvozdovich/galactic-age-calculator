@@ -8,8 +8,6 @@ $(document).ready(function() {
   $("#birthday-form").submit(function(event) {
     event.preventDefault();
 
-    $(".age-questions").hide();
-
     let name = $("#name-input").val();
     let birthday = $("#birthday-input").val();
     let year = parseInt(birthday.slice(0, 4));
@@ -25,8 +23,27 @@ $(document).ready(function() {
     $("#mars-years").text(user.findMars(earthAge));
     $("#jupiter-years").text(user.findJupiter(earthAge));
 
-    $(".age-results").show();
-    $(".big-question").show();
+    if (earthAge <= 0) {
+      $("#future-error").modal({
+        modal: true,
+        autoOpen: false,
+      });
+      $("#close-future").click(function() {
+        $("#future-error").modal("hide");
+      });
+    } else if (!/^[a-zA-Z]+$/.test(name)) {
+      $("#name-error").modal({
+        modal: true,
+        autoOpen: false,
+      });
+      $("#close-name").click(function() {
+        $("#name-error").modal("hide");
+      });
+    } else {
+      $(".age-questions").hide();
+      $(".age-results").show();
+      $(".big-question").show();
+    }
 
     $("button.big-question").click(function() {
       $(".age-results").hide();

@@ -26,6 +26,10 @@ button, .reduce-width {
   display: none;
 }
 
+.black-text {
+  color: black;
+}
+
 @media screen and (min-width: 800px) {
   button, .reduce-width {
     width: 25%;
