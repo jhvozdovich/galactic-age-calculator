@@ -18,4 +18,8 @@ export class User {
     let mercuryAge = Math.floor(age / 0.24);
     return mercuryAge;
   }
+
+  findVenus() {
+    
+  }
 }
