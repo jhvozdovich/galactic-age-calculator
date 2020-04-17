@@ -47,6 +47,8 @@ _Have a bug or an issue with this application? [Open a new issue](https://github
 | **Calculates a user's age in Jupiter years** | User Input:”February 25, 1995” | Output: “2” |
 | **Accepts user input to determine remaining life expectancy on each planet** | User Input:”Female-Active Lifestyle-City Residence” | Output: “Mercury: 200 years, Venus: 80 years, Earth: 50 years, Mars: 26 years, Jupiter: 4 years” |
 | **If a user is over the calculated life expectancy, the output is how much they have exceeded it** | User Input:”Female-Active Lifestyle-City Residence” | Output: “You're above average! Continue to live long and prosper. Mercury: 20 years, Venus: 8 years, Earth: 5 years, Mars: 3 years, Jupiter: 1 years”  |
+| **Displays an error for invalid name** | User Input:”Name: 27” | Output: “Are you a robot?” |
+| **Displays an error for a future year** | User Input:”Birthday: February 25, 1995” | Output: “Are you from the future?” |
 
 #### License
 
