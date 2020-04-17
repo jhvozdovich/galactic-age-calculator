@@ -14,7 +14,7 @@ _The purpose of this project is to output a user's age on various planets by cre
 1. Clone this repository from GitHub.
 2. Open the downloaded directory in a text editor of your choice.
   (VSCode, Atom, etc.)
-3. Run npm install in your terminal to download the necessary dependencies.
+3. Run npm install in your terminal to download the necessary dependencies, plugins, and modules.
 4. The command npm run start will build and open the compiled code in a browser of your choice using a local host.
 
 ### Known Bugs
@@ -45,10 +45,11 @@ _Have a bug or an issue with this application? [Open a new issue](https://github
 | **Calculates a user's age in Venus years** | User Input:”February 25, 1995” | Output: “40” |
 | **Calculates a user's age in Mars years** | User Input:”February 25, 1995” | Output: “13” |
 | **Calculates a user's age in Jupiter years** | User Input:”February 25, 1995” | Output: “2” |
-| **Accepts user input to determine remaining life expectancy on each planet** | User Input:”Female-Active Lifestyle-City Residence” | Output: “Mercury: 200 years, Venus: 80 years, Earth: 50 years, Mars: 26 years, Jupiter: 4 years” |
-| **If a user is over the calculated life expectancy, the output is how much they have exceeded it** | User Input:”Female-Active Lifestyle-City Residence” | Output: “You're above average! Continue to live long and prosper. Mercury: 20 years, Venus: 8 years, Earth: 5 years, Mars: 3 years, Jupiter: 1 years”  |
+| **Accepts user input to determine remaining life expectancy on each planet** | User Input:”Age: 27, Female-Active-City-Moderate Stress” | Output: “Years left: Mercury: 200 years, Venus: 77 years, Earth: 48 years, Mars: 25 years, Jupiter: 4 years” |
+| **If a user is over the calculated life expectancy, the output is how much they have exceeded it** | User Input:”Age: 80, Female-Active Lifestyle-City Residence” | Output: “This is how much longer you've lived than expected so far: Mercury: 21 years, Venus: 9 years, Earth: 5 years, Mars: 3 years, Jupiter: 1 years”  |
 | **Displays an error for invalid name** | User Input:”Name: 27” | Output: “Are you a robot?” |
 | **Displays an error for a future year** | User Input:”Birthday: February 25, 1995” | Output: “Are you from the future?” |
+| **In Progress-Calculates the date of the user's next birthday on each planet** | User Input:”Birthday: February 25, 1995” | Output: “Your next Mercury birthday is: May 25, 1995” |
 
 #### License
 
