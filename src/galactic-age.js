@@ -12,4 +12,8 @@ export class User {
     let roundYear = Math.floor(subtractNow / (365 * 24 * 60 * 60 * 1000));
     return roundYear;
   }
+
+  findMercury() {
+    
+  }
 }
