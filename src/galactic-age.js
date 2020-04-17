@@ -26,6 +26,8 @@ export class User {
   }
 
   findMars() {
-    
+    let age = this.findAge();
+    let marsAge = Math.floor(age / 1.88);
+    return marsAge;
   }
 }
