@@ -17,18 +17,17 @@ export class User {
     return roundYear;
   }
   
-  findMercury(time) {
-    let mercuryAge = Math.floor(time / 0.24);
+  findMercury(age) {
+    let mercuryAge = Math.floor(age / 0.24);
     return mercuryAge;
   }
 
-  findVenus(time) {
-    let venusAge = Math.floor(time / 0.62);
+  findVenus(age) {
+    let venusAge = Math.floor(age / 0.62);
     return venusAge;
   }
 
-  findMars() {
-    let age = this.findAge();
+  findMars(age) {
     let marsAge = Math.floor(age / 1.88);
     return marsAge;
   }
