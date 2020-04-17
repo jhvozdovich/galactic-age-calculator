@@ -23,5 +23,22 @@ $(document).ready(function() {
     $("#jupiter-years").text(user.findJupiter(earthAge));
     $(".age-results").show();
     $(".big-question").show();
+
+    $(".big-question").click(function() {
+      $(".age-questions").hide();
+      $(".big-question").hide();
+      $(".life-questions").show();
+    });  
+
+    $("#life-expectancy-form").submit(function(event) {
+      event.preventDefault();
+
+      user.gender = $("#gender-input").val();
+      user.activity = $("#activity-input").val();
+      user.environment = $("#environment-input").val();
+      user.stress = $("#stress-input").val();
+
+      $(".life-expectancy-results").text(user.lifeExpectancyMessage());
+    });
   });
 });

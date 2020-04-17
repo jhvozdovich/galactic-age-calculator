@@ -1,5 +1,5 @@
 body {
-  text-align: center;;
+  text-align: center;
 }
 
 button, .form-control {
@@ -10,7 +10,7 @@ button, .form-control {
   width: 60%;
 }
 
-.age-results, .big-question {
+.age-results, .big-question, .life-questions {
   display: none;
 }
 
