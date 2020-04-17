@@ -38,6 +38,7 @@ _Have a bug or an issue with this application? [Open a new issue](https://github
 ### Specs
 | Spec | Input | Output |
 | :------------- | :------------- | :------------- |
+| **Accepts and returns a user's name** | User Input:”Emma” | Output: “Hello Emma!” |
 | **Accepts and returns a user's birthday** | User Input:”February 25, 1995” | Output: “February 25, 1994” |
 | **Calculates a user's age in Earth years** | User Input:”February 25, 1994” | Output: “25” |
 | **Calculates a user's age in Mercury years** | User Input:”February 25, 1994” | Output: “104” |
