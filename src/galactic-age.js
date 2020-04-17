@@ -9,8 +9,7 @@ export class User {
   findAge() {
     let dateObject = new Date(this.year, this.month, this.day);
     let subtractNow = Date.now() - dateObject;
-    let subtractNowObject = new Date(subtractNow);
-    let subtractEpoch = Math.floor(subtractNowObject.getUTCFullYear() - 1970);
-    return subtractEpoch;
+    let roundYear = Math.floor(subtractNow / (365 * 24 * 60 * 60 * 1000));
+    return roundYear;
   }
 }
