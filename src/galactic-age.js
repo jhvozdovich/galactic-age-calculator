@@ -32,6 +32,8 @@ export class User {
   }
 
   findJupiter() {
-  
+    let age = this.findAge();
+    let jupiterAge = Math.floor(age / 11.86);
+    return jupiterAge;
   }
 }
