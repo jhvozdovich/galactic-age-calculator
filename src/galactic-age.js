@@ -22,9 +22,8 @@ export class User {
     return mercuryAge;
   }
 
-  findVenus() {
-    let age = this.findAge();
-    let venusAge = Math.floor(age / 0.62);
+  findVenus(time) {
+    let venusAge = Math.floor(time / 0.62);
     return venusAge;
   }
 
