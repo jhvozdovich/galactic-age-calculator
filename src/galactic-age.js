@@ -14,6 +14,8 @@ export class User {
   }
 
   findMercury() {
-    
+    let age = this.findAge();
+    let mercuryAge = Math.floor(age / 0.24);
+    return mercuryAge;
   }
 }
