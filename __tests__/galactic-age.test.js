@@ -53,7 +53,7 @@ describe ("User", () => {
   });
 
   test("should provide a message regarding remaing life expectancy on each planet-max not reached", () => {
-    expect(emma.lifeExpectancyMessage()).toEqual("Your estimated life expectancy is 71 Earth years. Live long and prosper!")
+    expect(emma.lifeExpectancyMessage()).toEqual("Your estimated life expectancy is 71 Earth years. Live long and prosper!");
   });
 });
 
