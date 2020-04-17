@@ -70,17 +70,18 @@ export class User {
   lifeExpectancyMessage() {
     let lifeExpectancy = this.lifeExpectancy();
     let age = this.findAge();
+
     let remainingLifeEarth = lifeExpectancy - age;
     let remainingLifeMercury = this.findMercury(remainingLifeEarth);
     let remainingLifeVenus = this.findVenus(remainingLifeEarth);
     let remainingLifeMars = this.findMars(remainingLifeEarth);
     let remainingLifeJupiter = this.findJupiter(remainingLifeEarth);
+
     if (this.findAge() < lifeExpectancy) {
-      let message = `Your estimated life expectancy is ${lifeExpectancy} Earth years. You have approximately ${remainingLifeMercury} Mercury years, ${remainingLifeVenus} Venus years, ${remainingLifeMars} Mars years, ${remainingLifeJupiter} Jupiter years, and ${remainingLifeEarth} Earth years left. Live long and prosper!`;
-      return message;
+      return `Your estimated life expectancy is ${lifeExpectancy} Earth years. You have approximately ${remainingLifeMercury} Mercury years, ${remainingLifeVenus} Venus years, ${remainingLifeMars} Mars years, ${remainingLifeJupiter} Jupiter years, and ${remainingLifeEarth} Earth years left. Live long and prosper!`;
+      
     } else {
-      let message = `Your estimated life expectancy is ${lifeExpectancy} Earth years. You've been crushing it ${-remainingLifeMercury} Mercury years, ${-remainingLifeVenus} Venus years, ${-remainingLifeMars} Mars years, ${-remainingLifeJupiter} Jupiter years, and ${-remainingLifeEarth} Earth years longer than expected. Way to beat the odds! Live long and prosper!`;
-      return message;
+      return `Your estimated life expectancy is ${lifeExpectancy} Earth years. You've been crushing it ${-remainingLifeMercury} Mercury years, ${-remainingLifeVenus} Venus years, ${-remainingLifeMars} Mars years, ${-remainingLifeJupiter} Jupiter years, and ${-remainingLifeEarth} Earth years longer than expected. Way to beat the odds! Live long and prosper!`;
     }
   }
 }

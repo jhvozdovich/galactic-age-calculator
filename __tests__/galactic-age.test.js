@@ -5,6 +5,7 @@ describe ("User", () => {
   beforeEach(() => {
     emma = new User("Emma", 1995, 1, 25);
   });
+  
   test("should correctly create a user object with a name and birthday with a month, day, and year", () => {
     expect(emma.name).toEqual("Emma");
     expect(emma.year).toEqual(1995);
@@ -65,6 +66,4 @@ describe ("User", () => {
     console.log(bobby.findAge());
     expect(bobby.lifeExpectancyMessage()).toEqual("Your estimated life expectancy is 57 Earth years. You've been crushing it 134 Mercury years, 52 Venus years, 18 Mars years, 3 Jupiter years, and 32 Earth years longer than expected. Way to beat the odds! Live long and prosper!");
   });
-
 });
-
