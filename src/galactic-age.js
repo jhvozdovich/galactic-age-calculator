@@ -70,11 +70,11 @@ export class User {
   lifeExpectancyMessage() {
     let lifeExpectancy = this.lifeExpectancy();
     let age = this.findAge();
-    let remainingLifeMercury = this.findMercury(lifeExpectancy) - this.findMercury(age);
-    let remainingLifeVenus = this.findVenus(lifeExpectancy) - this.findVenus(age);
-    let remainingLifeMars = this.findMars(lifeExpectancy) - this.findMars(age);
-    let remainingLifeJupiter = this.findJupiter(lifeExpectancy) - this.findJupiter(age);
     let remainingLifeEarth = lifeExpectancy - age;
+    let remainingLifeMercury = this.findMercury(remainingLifeEarth);
+    let remainingLifeVenus = this.findVenus(remainingLifeEarth);
+    let remainingLifeMars = this.findMars(remainingLifeEarth);
+    let remainingLifeJupiter = this.findJupiter(remainingLifeEarth);
     if (this.findAge() < lifeExpectancy) {
       let message = `Your estimated life expectancy is ${lifeExpectancy} Earth years. You have approximately ${remainingLifeMercury} Mercury years, ${remainingLifeVenus} Venus years, ${remainingLifeMars} Mars years, ${remainingLifeJupiter} Jupiter years, and ${remainingLifeEarth} Earth years left. Live long and prosper!`;
       return message;
