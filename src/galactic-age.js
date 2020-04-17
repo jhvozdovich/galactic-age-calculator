@@ -43,6 +43,7 @@ export class User {
 
   lifeExpectancy() {
     let lifeExpectancy = 71;
+
     if (this.gender === "male") {
       lifeExpectancy -= 1;
     } else if (this.gender === "female") {
@@ -68,6 +69,10 @@ export class User {
     }
 
     return lifeExpectancy;
+  }
+
+  lifeExpectancyMessage() {
+
   }
 }
 
