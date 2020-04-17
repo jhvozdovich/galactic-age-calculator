@@ -68,11 +68,18 @@ export class User {
   }
 
   lifeExpectancyMessage() {
-    if (this.findAge() < this.lifeExpectancy()) {
-      let message = `Your estimated life expectancy is ${this.lifeExpectancy()} Earth years. Live long and prosper!`;
+    let lifeExpectancy = this.lifeExpectancy();
+    let age = this.findAge();
+    let remainingLifeMercury = this.findMercury(lifeExpectancy) - this.findMercury(age);
+    let remainingLifeVenus = this.findVenus(lifeExpectancy) - this.findVenus(age);
+    let remainingLifeMars = this.findMars(lifeExpectancy) - this.findMars(age);
+    let remainingLifeJupiter = this.findJupiter(lifeExpectancy) - this.findJupiter(age);
+    let remainingLifeEarth = lifeExpectancy - age;
+    if (this.findAge() < lifeExpectancy) {
+      let message = `Your estimated life expectancy is ${lifeExpectancy} Earth years. You have approximately ${remainingLifeMercury} Mercury years, ${remainingLifeVenus} Venus years, ${remainingLifeMars} Mars years, ${remainingLifeJupiter} Jupiter years, and ${remainingLifeEarth} Earth years left. Live long and prosper!`;
       return message;
     } else {
-      let message = `Your estimated life expectancy is ${this.lifeExpectancy()} Earth years. Way to beat the odds! Live long and prosper!`;
+      let message = `Your estimated life expectancy is ${lifeExpectancy} Earth years. Way to beat the odds! Live long and prosper!`;
       return message;
     }
   }
