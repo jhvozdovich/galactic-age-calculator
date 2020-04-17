@@ -39,12 +39,12 @@ _Have a bug or an issue with this application? [Open a new issue](https://github
 | Spec | Input | Output |
 | :------------- | :------------- | :------------- |
 | **Accepts and returns a user's name** | User Input:”Emma” | Output: “Hello Emma!” |
-| **Accepts and returns a user's birthday** | User Input:”February 25, 1995” | Output: “February 25, 1994” |
-| **Calculates a user's age in Earth years** | User Input:”February 25, 1994” | Output: “25” |
-| **Calculates a user's age in Mercury years** | User Input:”February 25, 1994” | Output: “104” |
-| **Calculates a user's age in Venus years** | User Input:”February 25, 1994” | Output: “40” |
-| **Calculates a user's age in Mars years** | User Input:”February 25, 1994” | Output: “13” |
-| **Calculates a user's age in Jupiter years** | User Input:”February 25, 1994” | Output: “2” |
+| **Accepts and returns a user's birthday** | User Input:”February 25, 1995” | Output: “February 25, 1995” |
+| **Calculates a user's age in Earth years** | User Input:”February 25, 1995” | Output: “25” |
+| **Calculates a user's age in Mercury years** | User Input:”February 25, 1995” | Output: “104” |
+| **Calculates a user's age in Venus years** | User Input:”February 25, 1995” | Output: “40” |
+| **Calculates a user's age in Mars years** | User Input:”February 25, 1995” | Output: “13” |
+| **Calculates a user's age in Jupiter years** | User Input:”February 25, 1995” | Output: “2” |
 | **Accepts user input to determine remaining life expectancy on each planet** | User Input:”Female-Active Lifestyle-City Residence” | Output: “Mercury: 200 years, Venus: 80 years, Earth: 50 years, Mars: 26 years, Jupiter: 4 years” |
 | **If a user is over the calculated life expectancy, the output is how much they have exceeded it** | User Input:”Female-Active Lifestyle-City Residence” | Output: “You're above average! Continue to live long and prosper. Mercury: 20 years, Venus: 8 years, Earth: 5 years, Mars: 3 years, Jupiter: 1 years”  |
 
