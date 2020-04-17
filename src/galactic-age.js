@@ -20,6 +20,8 @@ export class User {
   }
 
   findVenus() {
-    
+    let age = this.findAge();
+    let venusAge = Math.floor(age / 0.62);
+    return venusAge;
   }
 }
