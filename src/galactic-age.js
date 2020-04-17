@@ -79,7 +79,7 @@ export class User {
       let message = `Your estimated life expectancy is ${lifeExpectancy} Earth years. You have approximately ${remainingLifeMercury} Mercury years, ${remainingLifeVenus} Venus years, ${remainingLifeMars} Mars years, ${remainingLifeJupiter} Jupiter years, and ${remainingLifeEarth} Earth years left. Live long and prosper!`;
       return message;
     } else {
-      let message = `Your estimated life expectancy is ${lifeExpectancy} Earth years. Way to beat the odds! Live long and prosper!`;
+      let message = `Your estimated life expectancy is ${lifeExpectancy} Earth years. You've been crushing it ${-remainingLifeMercury} Mercury years, ${-remainingLifeVenus} Venus years, ${-remainingLifeMars} Mars years, ${-remainingLifeJupiter} Jupiter years, and ${-remainingLifeEarth} Earth years longer than expected. Way to beat the odds! Live long and prosper!`;
       return message;
     }
   }

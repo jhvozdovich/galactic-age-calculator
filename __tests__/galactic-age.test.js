@@ -63,7 +63,7 @@ describe ("User", () => {
     bobby.environment = "city";
     bobby.stress = "high";
     console.log(bobby.findAge());
-    expect(bobby.lifeExpectancyMessage()).toEqual("Your estimated life expectancy is 57 Earth years. Way to beat the odds! Live long and prosper!");
+    expect(bobby.lifeExpectancyMessage()).toEqual("Your estimated life expectancy is 57 Earth years. You've been crushing it 134 Mercury years, 52 Venus years, 18 Mars years, 3 Jupiter years, and 32 Earth years longer than expected. Way to beat the odds! Live long and prosper!");
   });
 
 });
