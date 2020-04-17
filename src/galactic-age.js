@@ -12,7 +12,7 @@ export class User {
     let roundYear = Math.floor(subtractNow / (365 * 24 * 60 * 60 * 1000));
     return roundYear;
   }
-
+  
   findMercury() {
     let age = this.findAge();
     let mercuryAge = Math.floor(age / 0.24);
@@ -23,5 +23,9 @@ export class User {
     let age = this.findAge();
     let venusAge = Math.floor(age / 0.62);
     return venusAge;
+  }
+
+  findMars() {
+    
   }
 }
